@@ -3,8 +3,6 @@
 # Keep the data in a subfolder of the volume (mounted at /var/lib/mysql),
 # so the volume's lost+found folder never shows up as a database.
 datadir = /var/lib/mysql/data
-# Listen on IPv4 and IPv6 (Railway's private network).
-bind-address = ::
 # Connections come from Railway's private network: don't resolve client host names.
 skip-name-resolve
 character-set-server = utf8mb4
